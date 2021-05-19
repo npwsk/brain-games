@@ -16,5 +16,8 @@
     "url": "https://github.com/bbngpw/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/bbngpw/frontend-project-lvl1#readme",
-  "type": "module"
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
 }
