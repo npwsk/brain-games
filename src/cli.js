@@ -7,8 +7,11 @@ const getUserName = () => {
   return name;
 };
 
-const getUserAnswer = (number) => {
+const printGameInstructions = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
+};
+
+const getUserAnswer = (number) => {
   console.log(`Question: ${number}`);
   const answer = question('Your answer: ');
   return answer;
@@ -32,5 +35,6 @@ const printWinMessage = (userName) => {
 
 export {
   getUserName, getUserAnswer, printDebugMessage,
-  printSuccessMessage, printLossMessage, printWinMessage,
+  printSuccessMessage, printLossMessage,
+  printWinMessage, printGameInstructions,
 };
