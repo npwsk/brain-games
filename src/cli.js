@@ -21,6 +21,15 @@ const printSuccessMessage = () => {
   console.log('Correct!');
 };
 
+const printLossMessage = (userName) => {
+  console.log(`Let's try again, ${userName}!`);
+};
+
+const printWinMessage = (userName) => {
+  console.log(`Congratulations, ${userName}!`);
+};
+
 export {
-  getUserName, getUserAnswer, printDebugMessage, printSuccessMessage,
+  getUserName, getUserAnswer, printDebugMessage, 
+  printSuccessMessage, printLossMessage, printWinMessage,
 };
