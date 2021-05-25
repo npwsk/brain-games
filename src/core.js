@@ -16,5 +16,5 @@ const checkAnswer = (number, userAnswer) => {
 };
 
 export {
-  generateNumber, checkAnswer,
+  generateNumber, checkAnswer, getCorrectAnswer,
 };
