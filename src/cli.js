@@ -6,4 +6,13 @@ const getUserName = () => {
   console.log(`Hello, ${name}!`);
 };
 
-export default getUserName;
+const getUserAnswer = (number) => {
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(`Question: ${number}`);
+  const answer = question('Your answer: ');
+  return answer;
+};
+
+export {
+  getUserName, getUserAnswer,
+};
