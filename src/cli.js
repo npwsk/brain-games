@@ -17,6 +17,10 @@ const printDebugMessage = (userAnswer, correctAnswer) => {
   console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`.);
 };
 
+const printSuccessMessage = () => {
+  console.log('Correct!');
+};
+
 export {
-  getUserName, getUserAnswer, printDebugMessage,
+  getUserName, getUserAnswer, printDebugMessage, printSuccessMessage,
 };
