@@ -14,7 +14,7 @@ const getUserAnswer = (number) => {
 };
 
 const printDebugMessage = (userAnswer, correctAnswer) => {
-  console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`.);
+  console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
 };
 
 const printSuccessMessage = () => {
@@ -30,6 +30,6 @@ const printWinMessage = (userName) => {
 };
 
 export {
-  getUserName, getUserAnswer, printDebugMessage, 
+  getUserName, getUserAnswer, printDebugMessage,
   printSuccessMessage, printLossMessage, printWinMessage,
 };
