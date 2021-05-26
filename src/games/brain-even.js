@@ -1,21 +1,11 @@
-import * as cli from '../cli.js';
-import { generateNumber, checkAnswer, getCorrectAnswer } from '../index.js';
+import { startGame as startAnyGame, generateNumber } from '../index.js';
 
-const startGame = () => {
-  const userName = cli.getUserName();
-  cli.printGameInstructions();
-  for (let round = 1; round <= 3; round += 1) {
-    const number = generateNumber();
-    const userAnswer = cli.getUserAnswer(number);
-    const correctAnswer = getCorrectAnswer(number);
-    if (!checkAnswer(number, userAnswer)) {
-      cli.printDebugMessage(userAnswer, correctAnswer);
-      cli.printLossMessage(userName);
-      process.exit();
-    }
-    cli.printSuccessMessage();
-  }
-  cli.printWinMessage(userName);
-};
+const isEven = (number) => number % 2 === 0;
+
+const getCorrectAnswer = (number) => (isEven(number) ? 'yes' : 'no');
+
+const gameInstructionsMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const startGame = () => startAnyGame(gameInstructionsMessage, generateNumber, getCorrectAnswer);
 
 export default startGame;

@@ -7,12 +7,12 @@ const getUserName = () => {
   return name;
 };
 
-const printGameInstructions = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const printGameInstructions = (message) => {
+  console.log(`${message}`);
 };
 
-const getUserAnswer = (number) => {
-  console.log(`Question: ${number}`);
+const getUserAnswer = (questionMessage) => {
+  console.log(`Question: ${questionMessage}`);
   const answer = question('Your answer: ');
   return answer;
 };

@@ -1,19 +1,33 @@
+import * as cli from './cli.js';
+
 const maxGeneratedNumber = 100;
 
 const generateNumber = () => Math.floor(Math.random() * maxGeneratedNumber);
 
-const isEven = (number) => number % 2 === 0;
-
-const getCorrectAnswer = (number) => (isEven(number) ? 'yes' : 'no');
-
-const checkAnswer = (number, userAnswer) => {
-  const correctAnswer = getCorrectAnswer(number);
+const checkAnswer = (correctAnswer, userAnswer) => {
   if (userAnswer === correctAnswer) {
     return true;
   }
   return false;
 };
 
+const startGame = (gameInstructionsMessage, getQuestion, calculateAnswer) => {
+  const userName = cli.getUserName();
+  cli.printGameInstructions(gameInstructionsMessage);
+  for (let round = 1; round <= 3; round += 1) {
+    const question = getQuestion();
+    const userAnswer = cli.getUserAnswer(question);
+    const correctAnswer = calculateAnswer(question);
+    if (!checkAnswer(correctAnswer, userAnswer)) {
+      cli.printDebugMessage(userAnswer, correctAnswer);
+      cli.printLossMessage(userName);
+      process.exit();
+    }
+    cli.printSuccessMessage();
+  }
+  cli.printWinMessage(userName);
+};
+
 export {
-  generateNumber, checkAnswer, getCorrectAnswer,
+  generateNumber, startGame,
 };
