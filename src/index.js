@@ -1,6 +1,7 @@
 import * as cli from './cli.js';
 
 const maxGeneratedNumber = 100;
+const roundsMaxCount = 3;
 
 const generateNumber = () => Math.floor(Math.random() * maxGeneratedNumber);
 
@@ -14,7 +15,7 @@ const checkAnswer = (correctAnswer, userAnswer) => {
 const startGame = (gameInstructionsMessage, getQuestion, calculateAnswer) => {
   const userName = cli.getUserName();
   cli.printGameInstructions(gameInstructionsMessage);
-  for (let round = 1; round <= 3; round += 1) {
+  for (let round = 1; round <= roundsMaxCount; round += 1) {
     const question = getQuestion();
     const userAnswer = cli.getUserAnswer(question);
     const correctAnswer = calculateAnswer(question);
