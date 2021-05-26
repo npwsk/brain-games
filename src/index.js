@@ -1,9 +1,8 @@
 import * as cli from './cli.js';
 
-const maxGeneratedNumber = 10;
 const roundsMaxCount = 3;
 
-const generateNumber = () => Math.floor(Math.random() * maxGeneratedNumber);
+const generateNumber = (maxNumber) => Math.floor(Math.random() * maxNumber);
 
 const checkAnswer = (correctAnswer, userAnswer) => {
   if (userAnswer === correctAnswer) {

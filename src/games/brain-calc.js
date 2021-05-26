@@ -1,13 +1,14 @@
 import { startGame as startAnyGame, generateNumber } from '../index.js';
 
+const maxRandomNumber = 50;
 const instructionsMessage = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
 const getRandomOperation = () => operations[Math.floor(Math.random() * 3)];
 
 const generateExpression = () => {
-  const num1 = generateNumber();
-  const num2 = generateNumber();
+  const num1 = generateNumber(maxRandomNumber);
+  const num2 = generateNumber(maxRandomNumber);
   const operation = getRandomOperation();
   return `${num1} ${operation} ${num2}`;
 };
