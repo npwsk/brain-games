@@ -4,7 +4,7 @@ const maxRandomNumber = 50;
 const instructionsMessage = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
-const getRandomOperation = () => operations[Math.floor(Math.random() * 3)];
+const getRandomOperation = () => operations[generateNumber(operations.length)];
 
 const generateExpression = () => {
   const num1 = generateNumber(maxRandomNumber);
