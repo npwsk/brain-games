@@ -1,6 +1,6 @@
 import * as cli from './cli.js';
 
-const maxGeneratedNumber = 100;
+const maxGeneratedNumber = 10;
 const roundsMaxCount = 3;
 
 const generateNumber = () => Math.floor(Math.random() * maxGeneratedNumber);
