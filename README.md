@@ -5,12 +5,9 @@
 
 [![Linter Action Status](https://github.com/bbngpw/frontend-project-lvl1/actions/workflows/run-eslint.yml/badge.svg)](https://github.com/bbngpw/frontend-project-lvl1/actions)
 
-Демонстрация установки пакета запуска игрового процесса brain-games и brain-even: https://asciinema.org/a/A8ER7sAyTUhB3xlaIYi2s3DGE
-
-Демонстрация игрового процесса brain-calc: https://asciinema.org/a/l5hsfKmKp5naYO7tjrIAemffy
-
-Демонстрация игрового процесса brain-gcd: https://asciinema.org/a/LCaBIYiUHyJizsegIeA7zoWAO
-
-Демонстрация игрового процесса brain-progression: https://asciinema.org/a/CatqJGWV0LUkwF0CbV61tnK8r
-
-Демонстрация игрового процесса brain-prime: https://asciinema.org/a/i1S9v0aAhuEhM4ZRzrXDj17VL
+### Демонстрация:
+- установка пакета, игровой процесс **brain-games** и **brain-even**: https://asciinema.org/a/A8ER7sAyTUhB3xlaIYi2s3DGE
+- игровой процесс **brain-calc**: https://asciinema.org/a/l5hsfKmKp5naYO7tjrIAemffy
+- игровой процесс **brain-gcd**: https://asciinema.org/a/LCaBIYiUHyJizsegIeA7zoWAO
+- игровой процесс **brain-progression**: https://asciinema.org/a/CatqJGWV0LUkwF0CbV61tnK8r
+- игровой процесс **brain-prime**: https://asciinema.org/a/i1S9v0aAhuEhM4ZRzrXDj17VL
