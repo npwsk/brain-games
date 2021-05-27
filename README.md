@@ -10,3 +10,5 @@
 Демонстрация игрового процесса brain-calc: https://asciinema.org/a/l5hsfKmKp5naYO7tjrIAemffy
 
 Демонстрация игрового процесса brain-gcd: https://asciinema.org/a/LCaBIYiUHyJizsegIeA7zoWAO
+
+Демонстрация игрового процесса brain-progression: https://asciinema.org/a/CatqJGWV0LUkwF0CbV61tnK8r
