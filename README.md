@@ -12,3 +12,5 @@
 Демонстрация игрового процесса brain-gcd: https://asciinema.org/a/LCaBIYiUHyJizsegIeA7zoWAO
 
 Демонстрация игрового процесса brain-progression: https://asciinema.org/a/CatqJGWV0LUkwF0CbV61tnK8r
+
+Демонстрация игрового процесса brain-prime: https://asciinema.org/a/i1S9v0aAhuEhM4ZRzrXDj17VL
